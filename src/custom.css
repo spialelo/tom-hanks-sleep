@@ -1,0 +1,102 @@
+.ss-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 2rem auto 0;
+    text-align: center;
+    max-width: 500px;
+    
+}
+
+form {
+    padding: 0.5rem 0 2rem 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+
+label {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: 3rem;
+    font-size: 1rem;
+    margin: 2.5rem auto;
+    width: 50%;
+}
+
+.error-field {
+    border-color: rgba(200,10,0,0.9);
+}
+
+
+.card-body div.form-group:last-of-type {
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    grid-gap: 20px;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+
+.card-body div.form-group:last-of-type input[type=text] {
+    display: grid;
+    width: 100%;
+    
+}
+
+select {
+    height: 2.5rem;
+    margin-top: 0.5rem;
+}
+
+input[type=submit] {
+    height: 3rem;
+    width: 22rem;
+    border-radius: 5px;
+    border: 1px solid #999999;
+    margin-top: 1.25rem;
+    color: #fff;
+    background-color: rgba(40, 70, 210, 0.80);
+    cursor: pointer;
+}
+
+input:disabled[type=submit] {
+    background-color: rgba(40, 70, 210, 0.40);
+    cursor: auto;
+}
+
+
+.text-display {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem auto;
+    border: 1px solid #666;
+    border-radius: 5px;
+    width: 30%;
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+
+@media screen and (max-width: 320px) {
+    .card {
+        max-width: none;
+    }
+    .card-body div.form-group {
+        width: 220px;
+    }
+    
+    .card-body div.form-group:last-of-type {
+        grid-template-columns: 1fr;
+    }
+    
+    .card-body div.form-group:last-of-type .exp-group:last-of-type input {
+        margin-top: 0;
+    }
+    
+    .card-body form button.btn-primary {
+        width: 224px;
+    }
+}
