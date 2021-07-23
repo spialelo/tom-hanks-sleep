@@ -5,9 +5,7 @@ import './custom.css';
 function App() {
   return (
     <div className="App">
-
       <SleepScore />
-      
     </div>
   );
 }

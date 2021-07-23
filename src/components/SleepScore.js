@@ -2,12 +2,9 @@ import React from 'react';
 import useForm from '../hooks/useForm';
 import scoreCalculator from '../helpers/utils';
 
-
 const SleepScore = () => {
     
-    
    const { data, sleepScore, isDisable, isLoading, handleChange, handleSubmit } = useForm(callback, scoreCalculator);
-//   let hoursInADay = 24;
    let minInHour = 60;
    let thirtyIncrem = 720;
    
@@ -19,7 +16,7 @@ const SleepScore = () => {
    
    function callback() {
         console.log(data);
-  }
+    }
     
     
     return(
@@ -55,7 +52,7 @@ const SleepScore = () => {
             
         </div>
         )
-    
+
 };
 
 export default SleepScore;

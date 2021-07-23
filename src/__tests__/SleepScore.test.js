@@ -21,9 +21,8 @@ import SleepScore from '../components/SleepScore';
         });
         
     });
-    
-    
-    
+
+
     describe('Test Button state', () => {
         
         beforeEach(() => {
@@ -48,7 +47,6 @@ import SleepScore from '../components/SleepScore';
         });
         
     });
-    
     
     
     describe('Test Drop down states', () => {
@@ -99,7 +97,6 @@ import SleepScore from '../components/SleepScore';
 
         });
         
-        
     });
     
     
@@ -126,7 +123,6 @@ import SleepScore from '../components/SleepScore';
 
           const buttonElement = getByTestId("calculate");
 
-          
           expect(buttonElement).not.toBeEnabled();
           
           fireEvent.change(dropdown1, {
@@ -169,7 +165,6 @@ import SleepScore from '../components/SleepScore';
            );
  
         });
-        
         
     });
     

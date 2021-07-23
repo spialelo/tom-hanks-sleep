@@ -10,12 +10,11 @@ const useForm = (callback, calculator) => {
    
    useEffect(() => {
        
- 
    if(data.durationAsleep === '' || data.durationInBed === '') {
       setIsDisable(true);
     }
         
-       
+
     if(Object.keys(data).length === 2 && (data.durationInBed !== '' && data.durationAsleep !== '')) {
             callback();
           setIsDisable(false);
@@ -28,13 +27,12 @@ const useForm = (callback, calculator) => {
   const handleSubmit = async (e) => {
     if (e) e.preventDefault();
     setIsLoading(true);
-    await delay(1500);
+    await delay(1500); // simulate delay from API response
     
     let response = calculator(data);
     setSleepScore(response);
     setIsLoading(false);
-    
-    
+
   };
 
 
